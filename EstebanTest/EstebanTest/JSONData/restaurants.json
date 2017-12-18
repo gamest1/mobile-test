@@ -23,10 +23,23 @@
           "latitude": "45.490834",
           "longitude": "-73.777091"
         }
+      },
+      {
+          "address1": "1360 Sunnybrooke",
+          "label": "Pizza Spanos",
+          "zipCode": "H9B 2W5",
+          "city": "DDO",
+          "state": "QC",
+          "country": "Canada",
+          "gps": {
+          "latitude": "45.490834",
+          "longitude": "-73.777091"
+          }
       }
     ],
     "contactInfo": {
       "website": [
+        "https://www.google.com",
         "https://www.google.com"
       ],
       "email": [
@@ -125,6 +138,7 @@
     "created_at": "2017-08-03T22:19:50.918Z",
     "socialMedia": {
       "youtubeChannel": [
+        "https://www.youtube.com/channel/UCT0hbLDa-unWsnZ6Rjzkfug",
         "https://www.youtube.com/channel/UCT0hbLDa-unWsnZ6Rjzkfug"
       ],
       "twitter": [

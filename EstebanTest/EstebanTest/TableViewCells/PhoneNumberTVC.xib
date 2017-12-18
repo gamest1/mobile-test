@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneNumberTVC" rowHeight="97" id="EoN-4k-x0F" customClass="PhoneNumberTVC" customModule="EstebanTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EoN-4k-x0F" id="liA-Al-eMa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-lm-CM3">
+                        <rect key="frame" x="16" y="49" width="224" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ere-pq-WzG">
+                        <rect key="frame" x="307" y="27" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Y1W-Oq-LIq"/>
+                            <constraint firstAttribute="height" constant="42" id="x0e-DM-JxV"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="callNumberWithSender:" destination="EoN-4k-x0F" eventType="touchUpInside" id="RCM-FS-tSS"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2L-jg-K8y">
+                        <rect key="frame" x="250" y="27" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="5te-jS-dx7"/>
+                            <constraint firstAttribute="height" constant="42" id="Vhw-hK-o5V"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="sendTextWithSender:" destination="EoN-4k-x0F" eventType="touchUpInside" id="V6a-j5-8OB"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emN-8U-mUf">
+                        <rect key="frame" x="0.0" y="48" width="375" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Tfo-cc-7wU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJb-R8-A87">
+                        <rect key="frame" x="16" y="11" width="224" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="emN-8U-mUf" firstAttribute="centerY" secondItem="liA-Al-eMa" secondAttribute="centerY" id="0SQ-GI-B7A"/>
+                    <constraint firstItem="Ere-pq-WzG" firstAttribute="centerY" secondItem="liA-Al-eMa" secondAttribute="centerY" id="22x-iT-0Ey"/>
+                    <constraint firstItem="E2L-jg-K8y" firstAttribute="leading" secondItem="vJb-R8-A87" secondAttribute="trailing" constant="10" id="5lJ-KL-oMv"/>
+                    <constraint firstItem="emN-8U-mUf" firstAttribute="top" secondItem="vJb-R8-A87" secondAttribute="bottom" constant="8" id="7EC-SR-a4u"/>
+                    <constraint firstItem="emN-8U-mUf" firstAttribute="leading" secondItem="liA-Al-eMa" secondAttribute="leading" id="92H-Vg-d3o"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ere-pq-WzG" secondAttribute="trailing" constant="10" id="AC5-Jp-cn4"/>
+                    <constraint firstItem="E2L-jg-K8y" firstAttribute="leading" secondItem="Abh-lm-CM3" secondAttribute="trailing" constant="10" id="cCe-Ub-HTX"/>
+                    <constraint firstItem="E2L-jg-K8y" firstAttribute="centerY" secondItem="liA-Al-eMa" secondAttribute="centerY" id="d4U-W3-RkH"/>
+                    <constraint firstItem="Ere-pq-WzG" firstAttribute="leading" secondItem="E2L-jg-K8y" secondAttribute="trailing" constant="15" id="dG3-ze-rPz"/>
+                    <constraint firstItem="Abh-lm-CM3" firstAttribute="top" secondItem="emN-8U-mUf" secondAttribute="bottom" id="e0H-nB-qf6"/>
+                    <constraint firstItem="vJb-R8-A87" firstAttribute="leading" secondItem="liA-Al-eMa" secondAttribute="leadingMargin" id="fDQ-80-01r"/>
+                    <constraint firstItem="Abh-lm-CM3" firstAttribute="leading" secondItem="liA-Al-eMa" secondAttribute="leadingMargin" id="hwk-Xd-fUy"/>
+                    <constraint firstItem="vJb-R8-A87" firstAttribute="top" secondItem="liA-Al-eMa" secondAttribute="topMargin" id="mRi-3D-wuX"/>
+                    <constraint firstAttribute="trailing" secondItem="emN-8U-mUf" secondAttribute="trailing" id="tXJ-Eg-jKg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Abh-lm-CM3" secondAttribute="bottom" id="zaj-b4-2AB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="callButton" destination="Ere-pq-WzG" id="gjg-J1-h3e"/>
+                <outlet property="mainTitle" destination="vJb-R8-A87" id="zGl-wT-XzI"/>
+                <outlet property="messageButton" destination="E2L-jg-K8y" id="Xb4-KP-LyA"/>
+                <outlet property="phoneLabel" destination="Abh-lm-CM3" id="jS0-q5-WnC"/>
+            </connections>
+            <point key="canvasLocation" x="-104.5" y="-16.5"/>
+        </tableViewCell>
+    </objects>
+</document>
